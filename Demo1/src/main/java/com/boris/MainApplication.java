@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MainApplication {
     public static void main(String[] args) {
+        // 主程序启动
         SpringApplication.run(MainApplication.class, args);
     }
 }
