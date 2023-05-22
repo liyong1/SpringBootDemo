@@ -6,5 +6,26 @@
 </head>
 <body>
 <h1>Boris, 欢迎！</h1>
+<br/>
+测试基础注解：
+<ul>
+    <a href="car/3/owner/lisi?age=18&inters=basketball&inters=game">car/{id}/owner/{username}</a>
+    <li>@PathVariable(路径变量)</li>
+    <li>@RequestHeader(获取请求头)</li>
+    <li>@RequestParam(获取请求参数)</li>
+    <li>@CookieValue(获取cookie值)</li>
+    <li>@RequestBody(获取请求体[Post])</li>
+    <li>@RequestAttribute（获取request域属性）</li>
+    <li>@MatrixVariable（矩阵变量）</li>
+</ul>
+/car/{path}?xxx=xxx&aaa=ccc queryString 查询字符串。@RequestParam；<br/>
+
+<br/>
+<form action="/save" method="post">
+    测试@RequestBody获取数据 <br/>
+    用户名：<input name="userName"/> <br>
+    邮箱：<input name="email"/>
+    <input type="submit" value="提交"/>
+</form>
 </body>
 </html>
