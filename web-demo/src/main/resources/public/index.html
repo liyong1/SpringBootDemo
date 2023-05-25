@@ -19,6 +19,21 @@
     <li>@MatrixVariable（矩阵变量）</li>
 </ul>
 /car/{path}?xxx=xxx&aaa=ccc queryString 查询字符串。@RequestParam；<br/>
+cars/sell;low=34;brand=byd,audi,yd  ；矩阵变量 <br/>
+页面开发，cookie禁用了，session里面的内容怎么使用；
+session.set(a,b)---> jsessionid ---> cookie ----> 每次发请求携带。
+url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进行传递.
+
+/boss/1/2
+
+/boss/1;age=20/2;age=20
+<br/>
+<a href="/cars/sell;low=34;brand=byd,audi,yd">@MatrixVariable（矩阵变量）</a>
+<br/>
+<a href="/cars/sell;low=34;brand=byd;brand=audi;brand=yd">@MatrixVariable（矩阵变量）</a>
+<br/>
+<a href="/boss/1;age=20/2;age=10">@MatrixVariable（矩阵变量）/boss/{bossId}/{empId}</a>
+
 
 <br/>
 <form action="/save" method="post">
